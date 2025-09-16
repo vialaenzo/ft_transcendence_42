@@ -59,7 +59,7 @@ Deux options :
 
 via ce script :
 
-bash```
+```bash
 #!/bin/bash
 
 # Récupère le hostname FQDN
@@ -110,19 +110,17 @@ EOF
 
 echo ".env global généré avec succès ✅ ($GLOBAL_ENV_PATH)"
 
-````
+```
 
 Si vous souhaitez utiliser le script alors veuillez remplir les informations manquantes.
 
 #### 🔹 Manuel :
 
-
-
 ### 3. Lancer le projet
 
 ```bash
 docker compose up --build
-````
+```
 
 ## 📂 Structure du projet
 
