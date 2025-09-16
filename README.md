@@ -29,7 +29,7 @@ Projet réalisé par un groupe d’étudiants de 42 :
   - Pong **temps réel** avec WebSockets
   - Mode **multijoueur** (plus de 2 joueurs)
   - **Tournois** et matchmaking
-- **Accessibilité** : compatibilité multi-navigateurs, responsive design
+- **Accessibilité** : compatibilité multi-navigateurs
 - **DevOps** : déploiement via **Docker**, architecture orientée microservices
 
 ---
