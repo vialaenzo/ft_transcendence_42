@@ -55,69 +55,74 @@ cd ft_transcendence_42
 
 Deux options :
 
-#### 🔹 Automatique (recommandé)
+#### 🔹 Automatique :
 
-Exécuter le script `env.sh` :
+via ce script :
 
-```bash
-chmod +x env.sh
-./env.sh
-```
+bash```
+#!/bin/bash
 
-👉 Le script détecte automatiquement le **FQDN / IP de la machine** avec :
+# Récupère le hostname FQDN
 
-```bash
-hostname -f
-```
+DOMAIN="$(hostname -f)"
 
-C’est cette adresse (ou l’IP de ta VM/serveur) qu’il faudra utiliser pour accéder au site.
+# ----- .env front -----
 
-Exemple :
+FRONT_ENV_PATH="sources/front/.env"
 
-- Si `$DOMAIN = transcendance.42.fr`, alors l’accès se fera sur :
+cat > "$FRONT_ENV_PATH" <<EOF
+VITE_API_USER="https://$DOMAIN:3443/api/user"
+VITE_API_GAME="https://$DOMAIN:3443/api/game"
+VITE_API_LOGIC="https://$DOMAIN:3443/api/logic"
 
-  - `https://transcendance.42.fr:3443`
+VITE_USER_WSS="wss://$DOMAIN:3443/wss/user/friends"
+VITE_LOBBY_WSS="wss://$DOMAIN:3443/wss/game/lobby"
+VITE_LOGIC_WSS="wss://$DOMAIN:3443/wss/logic/ws"
+EOF
 
-- Si `$DOMAIN = 192.168.1.50`, alors :
+echo ".env front généré avec succès ✅ ($FRONT_ENV_PATH, domaine détecté : $DOMAIN)"
 
-  - `https://192.168.1.50:3443`
+# ----- .env global -----
 
-#### 🔹 Manuel
+GLOBAL_ENV_PATH=".env"
 
-Copier les fichiers exemples :
+cat > "$GLOBAL_ENV_PATH" <<EOF
+HTTPS_KEY="./ssl/localhost.key"
+HTTPS_CERT="./ssl/localhost.crt"
 
-```bash
-cp sources/front/.env.example sources/front/.env
-cp .env.example .env
-```
+JWT_KEY=""
 
-Puis modifier les variables (`DOMAIN`, clés OAuth, JWT_KEY, etc.) selon votre configuration.
+MAILER_ADDR=""
+MAILER_PSWD=""
 
----
+GOOGLE_OAUTH_ID=""
+GOOGLE_OAUTH_SECRET=""
+GOOGLE_OAUTH_URI=""
+
+FRONT_URL="https://$DOMAIN:3443"
+FRONT_DOMAIN="$DOMAIN"
+
+API_USER="https://user:3000"
+API_LOGIC="https://logic:3002"
+API_GAME="https://game:3001"
+
+EOF
+
+echo ".env global généré avec succès ✅ ($GLOBAL_ENV_PATH)"
+
+````
+
+Si vous souhaitez utiliser le script alors veuillez remplir les informations manquantes.
+
+#### 🔹 Manuel :
+
+
 
 ### 3. Lancer le projet
 
 ```bash
 docker compose up --build
-```
-
----
-
-## 🌐 Connexion
-
-- **Frontend** : `https://<DOMAIN>:3443`
-- **API User** : `https://<DOMAIN>:3443/api/user`
-- **API Game** : `https://<DOMAIN>:3443/api/game`
-- **API Logic** : `https://<DOMAIN>:3443/api/logic`
-- **WebSockets** :
-
-  - `wss://<DOMAIN>:3443/wss/user/friends`
-  - `wss://<DOMAIN>:3443/wss/game/lobby`
-  - `wss://<DOMAIN>:3443/wss/logic/ws`
-
-ℹ️ Remplacer `<DOMAIN>` par l’**IP locale** (`hostname -I`) ou le **nom de domaine** configuré.
-
----
+````
 
 ## 📂 Structure du projet
 
