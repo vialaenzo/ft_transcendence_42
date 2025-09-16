@@ -1,4 +1,3 @@
-
 # 🏓 ft_transcendence_42
 
 Projet de fin de tronc commun à **42** : une **plateforme web de Pong multijoueur** moderne, sécurisée et extensible.
@@ -149,11 +148,6 @@ ft_transcendence_42/
 
 ---
 
-## 📧 Contact
+## 📧 A toi de jouer
 
-Projet réalisé par le groupe **ft_transcendence_42** (École 42).
-
-```
-
-Si tu veux, je peux te générer directement le README.md complet prêt à coller dans ton repo, ou faire une version allégée ?
-```
+Amuse toi bien avec notre pong ^^
