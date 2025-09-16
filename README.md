@@ -1,6 +1,4 @@
-Voici la version du README.md avec les liens LinkedIn de ton équipe :
 
-````markdown
 # 🏓 ft_transcendence_42
 
 Projet de fin de tronc commun à **42** : une **plateforme web de Pong multijoueur** moderne, sécurisée et extensible.
@@ -53,7 +51,6 @@ Projet réalisé par un groupe d’étudiants de 42 :
 git clone https://github.com/vialaenzo/ft_transcendence_42.git
 cd ft_transcendence_42
 ```
-````
 
 ### 2. Générer les fichiers `.env`
 
