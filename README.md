@@ -1,13 +1,13 @@
 # 🏓 ft_transcendence_42
 
-Projet de fin de tronc commun à **42** : une **plateforme web de Pong multijoueur** moderne, sécurisée et extensible.
-L’objectif : construire une webapp complète avec gestion d’utilisateurs, authentification, microservices et gameplay en temps réel.
+Final Common Core project at **42**: a **modern, secure, and extensible multiplayer Pong web platform**.
+The goal: build a complete webapp with user management, authentication, microservices, and real-time gameplay.
 
 ---
 
-## 👥 Équipe
+## 👥 Team
 
-Projet réalisé par un groupe d’étudiants de 42 :
+Project carried out by a group of 42 students:
 
 - **[Enzo Viala](https://github.com/vialaenzo)**
 - **[Redwane Bouselham](https://github.com/Boubouss)**
@@ -17,49 +17,49 @@ Projet réalisé par un groupe d’étudiants de 42 :
 
 ---
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-- **Frontend** : SPA en **TypeScript + TailwindCSS**
-- **Backend** : **Node.js + Fastify**, architecture **microservices**
-- **Base de données** : **SQLite**
-- **Sécurité** : Authentification **JWT + 2FA**, HTTPS/WSS, validation des inputs
-- **OAuth2** : Connexion via **Google Sign-In**
-- **User Management** : inscription, login, avatar, amis, historique de matchs
-- **Gameplay** :
-  - Pong **temps réel** avec WebSockets
-  - Mode **multijoueur** (plus de 2 joueurs)
-  - **Tournois** et matchmaking
-- **Accessibilité** : compatibilité multi-navigateurs
-- **DevOps** : déploiement via **Docker**, architecture orientée microservices
+- **Frontend**: SPA with **TypeScript + TailwindCSS**
+- **Backend**: **Node.js + Fastify**, **microservices architecture**
+- **Database**: **SQLite**
+- **Security**: **JWT + 2FA authentication**, HTTPS/WSS, input validation
+- **OAuth2**: Login with **Google Sign-In**
+- **User Management**: signup, login, avatar, friends, match history
+- **Gameplay**:
+  - Real-time Pong with WebSockets
+  - **Multiplayer** mode (more than 2 players)
+  - **Tournaments** and matchmaking
+- **Accessibility**: multi-browser compatibility
+- **DevOps**: deployment with **Docker**, microservice-oriented architecture
 
 ---
 
-## 🛠️ Prérequis
+## 🛠️ Requirements
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/)
-- Un certificat SSL auto-signé ou valide (`ssl/localhost.crt` et `ssl/localhost.key`)
+- A valid or self-signed SSL certificate (`ssl/localhost.crt` and `ssl/localhost.key`)
 
 ---
 
-## ⚙️ Installation & Lancement
+## ⚙️ Installation & Run
 
-### 1. Cloner le dépôt
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/vialaenzo/ft_transcendence_42.git
 cd ft_transcendence_42
 ```
 
-### 2. Générer les fichiers `.env`
+### 2. Generate `.env` files
 
 ---
 
-Deux options :
+Two options :
 
-#### 🔹 Automatique :
+#### 🔹 Automatic :
 
-via ce script :
+Using the following script:
 
 ```bash
 #!/bin/bash
@@ -113,24 +113,22 @@ EOF
 echo ".env global généré avec succès ✅ ($GLOBAL_ENV_PATH)"
 
 ```
+If you wish to use the script, please fill the missing informations.
+---
 
-Si vous souhaitez utiliser le script alors veuillez remplir les informations manquantes.
+#### 🔹 Manual :
+
+You can complete the `.env.exemple` files located in the project root and in the [FRONT](./sources/front) directory.
 
 ---
 
-#### 🔹 Manuel :
-
-Vous pouvez completer les .env.exemple présent dans la racine du projet ainsi que dans le dossier [FRONT](./sources/front) .
-
----
-
-### 3. Lancer le projet
+### 3. Run the project
 
 ```bash
 docker compose up --build
 ```
 
-## 📂 Structure du projet
+## 📂 Project Structure
 
 ```
 ft_transcendence_42/
@@ -147,7 +145,7 @@ ft_transcendence_42/
 
 ---
 
-## 🧪 Modules implémentés
+## 🧪 Implementeds Projects
 
 - ✅ Web : **Fastify backend (Maj)**, **Tailwind frontend (Min)**, **SQLite DB (Min)**
 - ✅ User : **User Management (Maj)**, **Google OAuth (Maj)**
@@ -155,13 +153,13 @@ ft_transcendence_42/
 - ✅ Gameplay : **Multiplayer (Maj)**, **Player (Maj)**
 - ✅ DevOps : **Microservices backend (Maj)**
 - ✅ Accessibility : **Compatibilité navigateurs + responsive (Min)**
-- ✅ Server-Side Pong (Maj API Pong)
+- ✅ Server-Side : **Pong API Pong (Maj)**
 
 ---
 
-## 📧 A toi de jouer
+## 📧 Your turn
 
-Amuse toi bien avec notre pong ^^
+Enjoy playing our Pong game ^^
 
 ---
 
