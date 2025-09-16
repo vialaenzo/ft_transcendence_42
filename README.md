@@ -9,11 +9,11 @@ L’objectif : construire une webapp complète avec gestion d’utilisateurs, au
 
 Projet réalisé par un groupe d’étudiants de 42 :
 
-- **[Enzo Viala](https://www.linkedin.com/in/vla-enzo/)**
-- **[Redwane Bouselham](https://www.linkedin.com/in/redwane-bouselham?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACX_knABh1bQze00S2Rbfe9XYvUn11ABag4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bpl4CaNvERBec4%2FAymj0o1A%3D%3D)**
-- **[Jean Rasamimanana](https://www.linkedin.com/in/jean-rasamimanana-643b76271/)**
-- **Damien Trala**
-- **[Lounis Abdellou](https://www.linkedin.com/in/lounis-abdellou/)**
+- **[Enzo Viala](https://github.com/vialaenzo)**
+- **[Redwane Bouselham](https://github.com/Boubouss)**
+- **[Jean Rasamimanana](https://github.com/Fano435)**
+- **[Damien Trala](https://github.com/Undeadamien)**
+- **[Lounis Abdellou](https://github.com/LounisAbdellou)**
 
 ---
 
@@ -52,6 +52,8 @@ cd ft_transcendence_42
 ```
 
 ### 2. Générer les fichiers `.env`
+
+---
 
 Deux options :
 
@@ -114,7 +116,13 @@ echo ".env global généré avec succès ✅ ($GLOBAL_ENV_PATH)"
 
 Si vous souhaitez utiliser le script alors veuillez remplir les informations manquantes.
 
+---
+
 #### 🔹 Manuel :
+
+Vous pouvez completer les .env.exemple présent dans la racine du projet ainsi que dans le dossier [FRONT](./sources/front) .
+
+---
 
 ### 3. Lancer le projet
 
@@ -154,3 +162,11 @@ ft_transcendence_42/
 ## 📧 A toi de jouer
 
 Amuse toi bien avec notre pong ^^
+
+---
+
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---
